@@ -60,7 +60,6 @@
     align-items: center;
     justify-content: center;
     /* overflow: hidden; Hides any overflow of the image */
-    border: solid;
   }
 
   .pictures img{
