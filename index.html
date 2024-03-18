@@ -12,82 +12,156 @@
         <h1>Isabelle Meza</h1>
     </div>
     <div id="intro" class="section">
-        <h1>Responsive Redesign CS1300 Assignment</h1>
-        <p> I chose to redesign the Narragansett Indian Nation's Website for my project. I chose this specific website because it involves a part of the local Rhode Island community. From my observations, it was probably built by someone who had the information they wanted to convey but didn’t know how to present it in an effective way for users to understand/navigate. I will be showing my Design Process and what the end result ended up looking like</p>
+        <h1>A/B Testing a User Interface</h1>
     </div>
-
     <div id="line"></div>
-    <div id="Problems with Website" class="section">
-        <h1> Problems </h1>
-        <h2 class="subunit"> Accessibilty Issues</h2>
-        <ul>
-            <p>The navigation bar is too big</p>
-            <ul>
-                <p>The Icon of the tribe flag is not as noticeable as it could be (considering they are a nation and should have their flag seen)</p>
-                <p>Pictures cannot be seen clearly</p>
-                <p>It is hard to find the rest of the content on the page</p>
-                <p>The navigation bar seems to have a lot of content</p>
-            </ul>
-            <p>All the bright colors can make things seem cluttered and can cause contrast issues</p>
-        </ul>
-    </div>
-
+    <div id="overview of tests" class="section">
+        <h1> Overview </h1>
+          <p>I was tasked with determining how a design choice could impact User Interaction by running A/B testing on two different web designs. I will do this by gathering data on user interaction and analyzing the results using t-tests, an inferential statistic used to evaluate significant differences between two groups' means and their relationship.</p>
+          <p>The first UI I was given and with the second one I redesigned the first one. The website was formatted for someone who intended to make a doctor's appointment and the site gives information on which days certain doctors are available at a certain place. Some of the changes I made were changing the color of buttons to make less confusion around which button was “scheduling an appointment” and which button went to the “see appointment” page. I also changed the format of the buttons and created a line between each appointment to distinguish between them all.</p>
+    </div>\
+    
     <div id="line"></div>
 
-    <div id="Visual Redesign" class="section">
-      <h1>Visual Redesign</h1>
+    <div id="Data Collection" class="section">
+      <h1>Data Colletion</h1>
+      <p>This assignment was done in a class, and so the data I collected was from a lab we all participated in. We first all ‘tested’ the A version of the interface. We did this by being tasked with scheduling an appointment on a specific day, with a certain doctor. After we all did this, we were able to make changes to the website ended up being version B. Then, went around and tested each other's designs. It was the same people who tested version A that tested version B. 
+      </p>
       <div class = "subunit">
-        <h2>Sketch</h2>
-        <p> The first image on the left contains the nine sketches I drew to brainstorm different interfaces. The image on the right was final sketch that I chose to move forward with. </p>
+        <h2>Design Before/After</h2>
         <div class="pictures">
-          <img class="image" alt="nine sketches" src="./photos/nine_sketches.png" >
-          <img class="image" alt="final sketch" src="./photos/FinalSketch.png" >
+            <img class="image" alt="Design of Version A Website" src="./photos/lab_original_design.png">
+            <img class="image" alt="Design of Version B Website" src="./photos/lab_redesign.png">
+          </div>
+      </div>
+      <div class="subunit">
+        <h2>Data Tables A and B</h2>
+        <div class="pictures datapic">
+            <img class="image" alt="Data Table A" src="./photos/A_TestingData.png">
+            <img class="image" alt="Data Table B" src="./photos/B_TestingData.png">
         </div>
+
+      </div>
+    </div>
+
+    <div id="line"></div>
+
+    <div id="Analysis" class="section">
+      <h1>Analysis</h1>
+      <div class="subunit">
+        <h2>Hypothesis</h2>
+        <div id="part2">
+          <h1>Hypothesis</h1>
+          <p>
+            I created hypothesis for the folllowing data points: the misclick rate, the time spent on page, and the time it took for them to first click. 
+          </p>
+    
+          <table>
+            <tr>
+              <th></th>
+              <th>Misclick</th>
+              <th>Time Spent on Page</th>
+              <th>Time to First Click</th>
+            </tr>
+            <tr>
+              <th>Null Hypothesis</th>
+              <td>The misclick rate is the same for both versions</td>
+              <td>
+                There is no difference between the two versions for the average time spent on the page.
+              </td>
+              <td>
+                The average time to first click is going to be to be the same for both versions. 
+              </td>
+            </tr>
+            <tr>
+              <th>Alternative Hypothesis</th>
+              <td>
+                The misclick rate of version A will be greater than version B's. 
+              </td>
+              <td>
+                The time spent on the page will be longer for version A users than version B. 
+              </td>
+              <td>
+                Version A's time to first click will be longer than version B's. 
+              </td>
+            </tr>
+            <tr>
+              <th>Predictions</th>
+              <td>
+                I predict that I will reject the null hypothesis and the alternative hypothesis 
+                will be true because of the button spacing being too close together, 
+                low contrast between colors, and appointment sections not being clearly distinguished.
+              </td>
+              <td>
+                I predict that the null hypothesis wil be rejected because of the button spacing, 
+                low contrast between colors, and appointment sections not being clearly distinguished. 
+              </td>
+              <td>
+                I predict that the null hypothesis wil be rejected because of the button spacing being too close together, 
+                low contrast between colors, and appointment sections not being clearly distinguished.
+              </td>
+            </tr>
+          </table>
+          <table>
+            <tr>
+              <th></th>
+              <th>Misclick</th>
+              <th>Time Spent on Page</th>
+              <th>Time to First Click</th>
+            </tr>
+            <tr>
+              <th>Justification for Alternative Hypothesis</th>
+              <td>Because of the low contrast in colors and the spacing being too close between the buttons, I hypothesize
+                that the misclick rate will be higher for version A than version B. User's will have a harder time seeing which
+                button is for a certain purpose which will lead them to click the wrong one.
+              </td>
+              <td>Because of the appointments having no clear distinguishment from each other and the spacing being too close between the buttons, I hypothesize
+                that the time spent on the page will be longer for version A than version B. User's will have a harder time seeing which
+                button is for a certain purpose and if the button is on the right line. This will lead them to take longer to see if what option 
+                they are choosing is correct. 
+              </td>
+              <td>Because of the appointments having no clear distinguishment from each other, the spacing being too close between the buttons, and low contrast in color, I hypothesize
+                that version A's time to first click will be greater than version B. User's will have a harder time seeing which
+                button is for a certain purpose and if the button is on the right line. This will lead them to take longer to see if what option 
+                they are choosing is correct. 
+              </td>
+            </tr>
+          </table>
+
       </div>
       
-
-      <div class = "subunit">
-        <h2>Low-Fidelity</h2>
-        <p>These are the Wire-Frames that I did for the Interface. The images go from left to right: desktop, tablet, and mobile. I wanted to make sure that this design would be easy for people to navigate. That is why I had few items in the menu that had the abilty to drop down. Also, at the bottom I allowed for more links and pages to be added for other information. </p>
-        <div class="pictures">
-            <img class="image" alt="desktop wireframe" src="./photos/wireframeDesktop.png" >
-            <img class="image" alt="tablet wireframe" src="./photos/tabletWireframe.png" >
-            <img class="image" alt="mobile wireframe" src="./photos/mobileWireframe.png" >
+      <div class="subunit">
+        <h2>Resulting Statistical Analysis</h2>
+        <p>Computation of each metric's approiate statistics</p>
+        
+        <div class="subunit card">
+          <h3>Misclick Rate Metric Statistics</h3>
         </div>
-      </div>
-
-      <div class = "subunit">
-        <h2>Style Guide</h2>
-        <p>My next step was creating a style guide of colors and fonts for the whole website. I wanted to make sure that I was using colors that were not going to raise contrast issues. I also attempmted to find fonts that people could easily read. </p>
-        <div class="pictures">
-            <img class="image" alt="text and icon style guide" src="./photos/styleguide.png">
+        <div class="subunit card">
+          <h3>Time Spent on Page Metric Statistics</h3>
         </div>
-      </div>
-
-      <div class = "subunit">
-        <h2>High-Fidelity</h2>
-        <p>Below are my mock-up's. Form Left to Right: Desktop, Tablet, and Mobile.</p>
-        <div class="pictures">
-            <img class="image" alt="mock desktop" src="./photos/Desktop - 1.png">
-            <img class="image" alt="mock tablet" src="./photos/iPad Pro 11_ - 1.png">
-            <img class="image" alt="mock mobile" src="./photos/iPhone 13 & 14 - 1.png">
+        <div class="subunit card">
+          <h3>Time to First Click Metric Statistics</h3>
         </div>
       </div>
     </div>
 
     <div id="line"></div>
-
-    <div id="Deliverable" class="section">
-      <h1>Deliverable</h1>
-      <div class="final">
-        <p>This is the final website that I was able to produce.</p>
-        <a href="https://imeza4.github.io/narragansett-tribe-redesign/" class="deliverable">Narragansett Tibe Redesign Website Link</a>
-      <div class="unknown">
-        <img class="image" alt="pic of Desktop webpage" src="./photos/final.png">
+    
+    <div id="Conclusion" clas="section">
+      <div class="subunit">
+        <h2>Summary Statistics</h2>
       </div>
+      <div class="subunit">
+        <h2>Overall thoughts</h2>
+        <div class="subunit">
+          <p>test</p>
+        </div>
       </div>
-      
     </div>
+
+
+
 
 
   </body>
